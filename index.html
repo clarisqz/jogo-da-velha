@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body onload="comeca()">
+<br> <br>
+
+<center><h1 class="jogo">Jogo da</h1></center>
+<center><h1 class="velha">velha<br>
+ </h1></center>
+
+<br>
+
+<div class="wrapper">
+	<div class="coluna">
+	  <div class="elemento" id="a11" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a21" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a31" onclick="jogo(this.id); ganhou()"></div>
+	</div>
+	<div class="coluna">
+	  <div class="elemento" id="a12" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a22" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a32" onclick="jogo(this.id); ganhou()"></div>
+	</div>
+	<div class="coluna">
+	  <div class="elemento" id="a13" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a23" onclick="jogo(this.id); ganhou()"></div>
+	  <div class="elemento" id="a33" onclick="jogo(this.id); ganhou()"></div>
+	</div>
+
+</div>
+
+<div id="comeca" class="modal">
+  <div class="conteudo">
+  	<center>
+  		<span class="m1">Chama um coleguinha e vem?</span>
+  	</center>
+  	<br> <br>
+  	<center>
+		<button class="botao meio x">X</button>
+		<button class="botao meio o">O</button>
+	</center>
+  </div>
+</div>
+
+<div id="avisoganhou" class="modal">
+  <div class="conteudo">
+  	<center>
+  		<span class="m1">Parab&eacute;ns!</span>
+  		<div class="meio" id="ganhou"></div>
+  		<span class="m2">ganhou!</span>
+  	</center>
+  	<br> <br>
+  	<center>
+		<button class="botao novog">New Game</button>
+		<button class="botao resg">Tentar  novamente</button>
+	</center>
+  </div>
+</div>
+
+<div id="empate" class="modal">
+  <div class="conteudo">
+  	<center>
+  		<span class="m1">Hum...Foi</span>
+  		<div class="meio">Empate</div>
+  	</center>
+  	<br> <br>
+  	<center>
+		<button class="botao novoe">Novo jogo</button>
+		<button class="botao rese">Jogar novamente</button>
+	</center>
+  </div>
+</div>
+</body>
